@@ -12,6 +12,7 @@ import { Contact } from "@/components/sections/contact-section"
 import { Footer } from "@/components/sections/footer-section"
 import { LanguageToggle } from "@/components/tools/language-toggle"
 import { LanguageProvider } from "@/contexts/language-context"
+import { ThemeToggleButton } from "@/components/tools/theme-toggle-button"
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ function MainContent() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#2d1f4e] via-[#1a1b2e] to-background">
       <LanguageToggle />
+      <ThemeToggleButton />
       <Header />
       <Hero />
       <About />

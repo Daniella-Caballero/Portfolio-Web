@@ -1,17 +1,43 @@
 "use client"
 
-import { useState } from "react"
-import { Moon, Sun, Menu, X } from "lucide-react"
+import { useState, useEffect } from "react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
 import { translations } from "@/lib/translations"
 
-import { useTheme } from "@/contexts/theme-context"
 
 export function Header() {
-  const { theme, toggleTheme } = useTheme();
-  const isDark = theme === "dark";
   const [activeItem, setActiveItem] = useState("home")
+
+  useEffect(() => {
+    const sectionIds = [
+      "home",
+      "about",
+      "projects",
+      "skills",
+      "experience",
+      "certificates",
+      "contact",
+    ];
+    const handleScroll = () => {
+      let current = "home";
+      for (const id of sectionIds) {
+        const section = document.getElementById(id);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom > 80) {
+            current = id;
+            break;
+          }
+        }
+      }
+      setActiveItem(current);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { language } = useLanguage()
   const t = translations[language]
@@ -73,16 +99,6 @@ export function Header() {
           ))}
         </div>
       )}
-
-      {/* Theme toggle - fixed position */}
-      <Button
-        variant="ghost"
-        size="icon"
-        onClick={toggleTheme}
-        className="fixed bottom-6 right-6 bg-secondary/80 backdrop-blur-md rounded-full border border-border/50"
-      >
-        {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-      </Button>
     </header>
   )
 }
