@@ -4,13 +4,15 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #fdfdfd;
+  --background: #dcd8d8;
+  --background-start: #a188c9;
+  --background-end: #ce87c1;
   --foreground: #000000;
   --card: #fdfdfd;
   --card-foreground: #000000;
   --popover: #fcfcfc;
   --popover-foreground: #000000;
-  --primary: #7033ff;
+  --primary: #483576;
   --primary-foreground: #ffffff;
   --secondary: #edf0f4;
   --secondary-foreground: #080808;
@@ -48,16 +50,18 @@
 .dark {
   /* Adjusted dark theme colors for portfolio gradient background */
   --background: #0f0f14;
+  --background-start: #3a2c54;
+  --background-end: #692d5e;
   --foreground: #e8e8e8;
   --card: #1a1a24;
   --card-foreground: #e8e8e8;
   --popover: #1a1a24;
   --popover-foreground: #e8e8e8;
-  --primary: #8c5cff;
+  --primary: #6f4ebd;
   --primary-foreground: #ffffff;
   --secondary: #252530;
   --secondary-foreground: #e8e8e8;
-  --muted: #252530;
+  --muted: #463355;
   --muted-foreground: #9ca3af;
   --accent: #1e293b;
   --accent-foreground: #79c0ff;
@@ -128,24 +132,13 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --font-serif: "Lora", "Lora Fallback";
   /* computed shadow variables below - do not modify */
-  --shadow-2xs: var(--shadow-x) var(--shadow-y)
-    color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
-  --shadow-xs: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread)
-    color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
-  --shadow-sm: var(--shadow-x) var(--shadow-y) calc(var(--shadow-blur) * 1.5) var(--shadow-spread)
-    color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
-  --shadow-md: calc(var(--shadow-x) * 2) calc(var(--shadow-y) * 2) calc(var(--shadow-blur) * 3)
-    calc(var(--shadow-spread) - 1px)
-    color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
-  --shadow-lg: calc(var(--shadow-x) * 4) calc(var(--shadow-y) * 4) calc(var(--shadow-blur) * 5)
-    calc(var(--shadow-spread) - 3px)
-    color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
-  --shadow-xl: calc(var(--shadow-x) * 6) calc(var(--shadow-y) * 6) calc(var(--shadow-blur) * 7)
-    calc(var(--shadow-spread) - 5px)
-    color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
-  --shadow-2xl: calc(var(--shadow-x) * 8) calc(var(--shadow-y) * 8) calc(max(0px, var(--shadow-blur) * 9 - 8px))
-    calc(var(--shadow-spread) - 12px)
-    color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 250%), transparent);
+  --shadow-2xs: var(--shadow-x) var(--shadow-y) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+  --shadow-xs: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+  --shadow-sm: var(--shadow-x) var(--shadow-y) calc(var(--shadow-blur) * 1.5) var(--shadow-spread) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+  --shadow-md: calc(var(--shadow-x) * 2) calc(var(--shadow-y) * 2) calc(var(--shadow-blur) * 3) calc(var(--shadow-spread) - 1px) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+  --shadow-lg: calc(var(--shadow-x) * 4) calc(var(--shadow-y) * 4) calc(var(--shadow-blur) * 5) calc(var(--shadow-spread) - 3px) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+  --shadow-xl: calc(var(--shadow-x) * 6) calc(var(--shadow-y) * 6) calc(var(--shadow-blur) * 7) calc(var(--shadow-spread) - 5px) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+  --shadow-2xl: calc(var(--shadow-x) * 8) calc(var(--shadow-y) * 8) calc(max(0px, var(--shadow-blur) * 9 - 8px)) calc(var(--shadow-spread) - 12px) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 250%), transparent);
   --shadow: var(--shadow-md);
   --color-shadow-color: var(--shadow-color);
   --shadow-opacity: var(--shadow-opacity);
@@ -155,10 +148,19 @@
   --shadow-x: var(--shadow-x);
 }
 
+/* Gradiente de fondo personalizado para el portfolio */
+.bg-portfolio-gradient {
+  background: linear-gradient(to bottom,
+      var(--background-start),
+      var(--background),
+      var(--background-end));
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
