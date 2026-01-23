@@ -14,7 +14,7 @@ export const translations = {
       intro: "a ",
       role: "full-stack developer ",
       withText: "with ",
-      years: "5 years ",
+      years: "2 years ",
       expText: "of experience. I love ",
       building: "puzzles & building ",
       things: "apps and websites. ",
@@ -28,20 +28,20 @@ export const translations = {
     about: {
       title: "About Me",
       description:
-        "A seasoned Senior React Fullstack Developer with a strong frontend focus and comprehensive backend capabilities. Specialized in building high-performance web applications using modern JavaScript frameworks and cloud technologies.",
-      role: "Senior React Fullstack Developer",
+        "An experienced Junior Fullstack Developer with a versatile skill set across both frontend and backend development. Proficient in building dynamic and user-focused interfaces with React. Hands-on experience in mobile application development using Android Studio, as well as in game development with Unity. Comfortable working across the full development lifecycle, from concept to deployment, with a solid understanding of modern web technologies, databases, and APIs. Fan of clean code and best practices, including SOLID principles and hexagonal architecture, to ensure maintainable, scalable, and well-structured solutions. Proven ability to collaborate within team-based environments, using tools from the Git ecosystem to deliver reliable and high-quality software.",
+      role: "Junior Fullstack Developer",
     },
     projects: {
       title: "My Projects",
-      project1Title: "Codetickets",
+      project1Title: "Influencer Website",
       project1Body:
-        "Ticketing SaaS as vendor portal dashboard/retail for some public and private institutions, managing and serving their event tickets.",
-      project2Title: "TLDRAW with Next.js",
+        "Design, development, and deployment of a website for social media influencer to showcase their content and unify all their links in one place.",
+      project2Title: "Minimal Game",
       project2Body:
-        "Tldraw editor made with React and shadcn, integrating AI with OpenAI API to generate custom SVG forms.",
-      project3Title: "E-Commerce Platform",
+        "todo.",
+      project3Title: "GMTK Game Jam - Cutterang",
       project3Body:
-        "Full-stack e-commerce solution with product management, shopping cart, payments integration, and admin dashboard.",
+        "todo.",
     },
     skills: {
       title: "My Skills",
@@ -104,7 +104,7 @@ export const translations = {
       intro: "una ",
       role: "desarrolladora full-stack ",
       withText: "con ",
-      years: "5 años ",
+      years: "2 años ",
       expText: "de experiencia. Me encantan ",
       building: "los puzzles y crear ",
       things: "apps y websites. ",
@@ -118,8 +118,8 @@ export const translations = {
     about: {
       title: "Sobre Mí",
       description:
-        "Un experimentado Desarrollador Senior React Fullstack con un fuerte enfoque en frontend y capacidades backend completas. Especializado en construir aplicaciones web de alto rendimiento usando frameworks JavaScript modernos y tecnologías en la nube.",
-      role: "Desarrollador Senior React Fullstack",
+        "Versátil Desarrolladora Junior Fullstack con experiencia tanto en frontend como en backend. Competente en la creación de interfaces dinámicas y centradas en el usuario con React. Cuenta con experiencia práctica en el desarrollo de aplicaciones móviles utilizando Android Studio, así como en el desarrollo de videojuegos con Unity. Cómoda trabajando a lo largo de todo el ciclo de vida del desarrollo, desde la concepción hasta el despliegue, con un sólido conocimiento de tecnologías web modernas, bases de datos y APIs. Fan del código limpio y de las buenas prácticas, incluyendo los principios SOLID y la arquitectura hexagonal, para garantizar soluciones mantenibles, escalables y bien estructuradas. Versada en colaborar en entornos de trabajo en equipo, usando herramientas del ecosistema Git para entregar software fiable y de alta calidad.",
+      role: "Desarrolladora Junior Fullstack",
     },
     projects: {
       title: "Mis Proyectos",

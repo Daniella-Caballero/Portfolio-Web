@@ -8,20 +8,22 @@ const projects = [
   {
     titleKey: "project1Title",
     bodyKey: "project1Body",
-    tags: ["REACT", "NODE.JS", "CLOUDFLARE R2 DATABASE", "BOOTSTRAP", "AWS"],
-    image: "/placeholder.svg?height=300&width=500",
+    tags: ["REACT", "NEXT.JS", "TYPESCRIPT", "VERCEL"],
+    image: "influencer-website.png",
+    url: "https://tonireboredo.es",
   },
   {
     titleKey: "project2Title",
     bodyKey: "project2Body",
-    tags: ["TRPC", "REACT", "TYPESCRIPT", "NEXT.JS", "TAILWIND", "SHADCN"],
-    image: "/placeholder.svg?height=300&width=500",
+    tags: ["TRPC"],
+    image: "todo",
   },
   {
     titleKey: "project3Title",
     bodyKey: "project3Body",
-    tags: ["NEXT.JS", "SUPABASE", "TYPESCRIPT", "TAILWIND", "VERCEL"],
-    image: "/placeholder.svg?height=300&width=500",
+    tags: ["Unity", "C#", "VERCEL"],
+    image: "cutterang.png",
+    url: "https://daniellacaballero.itch.io/cutterang"
   },
 ]
 
@@ -32,7 +34,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">{t.projects.title}</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-balance text-center mb-12">{t.projects.title}</h2>
         <div className="flex flex-col gap-8">
           {projects.map((project, index) => (
             <ProjectCard
@@ -42,6 +44,7 @@ export function Projects() {
               tags={project.tags}
               image={project.image}
               index={index}
+              url={project.url}
             />
           ))}
         </div>

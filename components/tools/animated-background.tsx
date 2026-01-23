@@ -13,7 +13,7 @@ type BlobProps = {
     duration: number;
 };
 
-const Blob = ({ className, gradient = "radial-gradient(circle, hsl(var(--primary)) 0%, transparent 70%)", animation, duration }: BlobProps) => (
+const Blob = ({ className, gradient = "radial-gradient(circle, hsl(var(--primary)) 0%, transparent 100%)", animation, duration }: BlobProps) => (
     <motion.div
         aria-hidden
         className={`
@@ -40,10 +40,10 @@ const Blob = ({ className, gradient = "radial-gradient(circle, hsl(var(--primary
 export default function AnimatedGradientBackground() {
     return (
         <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            {/* Blob azul / violeta */}
+            {/* Blob principal (primary) */}
             <Blob
                 className="top-[-20%] left-[-10%] h-[500px] w-[500px]"
-                gradient="radial-gradient(circle at center, #7c7cff 0%, transparent 70%)"
+                gradient="radial-gradient(circle at center, var(--primary) 0%, transparent 300%)"
                 animation={{
                     x: [0, 60, -40, 0],
                     y: [0, -30, 20, 0],
@@ -52,10 +52,10 @@ export default function AnimatedGradientBackground() {
                 duration={26}
             />
 
-            {/* Blob rosado */}
+            {/* Blob acento (accent) */}
             <Blob
                 className="top-[10%] right-[-15%] h-[600px] w-[600px]"
-                gradient="radial-gradient(circle at center, #ff8ba7 0%, transparent 70%)"
+                gradient="radial-gradient(circle at center, var(--accent) 0%, transparent 300%)"
                 animation={{
                     x: [0, -50, 30, 0],
                     y: [0, 40, -20, 0],
@@ -64,10 +64,10 @@ export default function AnimatedGradientBackground() {
                 duration={30}
             />
 
-            {/* Blob turquesa */}
+            {/* Blob secundario (secondary) */}
             <Blob
                 className="bottom-[-25%] left-[20%] h-[700px] w-[700px]"
-                gradient="radial-gradient(circle at center, #00ffd5 0%, transparent 70%)"
+                gradient="radial-gradient(circle at center, var(--secondary) 0%, transparent 300%)"
                 animation={{
                     x: [0, 40, -60, 0],
                     y: [0, -20, 40, 0],

@@ -18,7 +18,6 @@ import AnimatedGradientBackground from "@/components/tools/animated-background"
 export default function Home() {
   return (
     <main className="relative min-h-screen">
-
       <ThemeProvider>
         <LanguageProvider>
           <AnimatedGradientBackground />
@@ -31,7 +30,7 @@ export default function Home() {
 
 function MainContent() {
   return (
-    <main className="min-h-screen bg-portfolio-gradient">
+    <main className="min-h-screen ">
       <LanguageToggle />
       <ThemeToggleButton />
       <Header />

@@ -75,7 +75,7 @@ export function Hero() {
       </div>
 
       {/* Divider line */}
-      <div className="w-px h-24 bg-border mt-16" />
+      <div className="w-[2px] h-24 bg-border mt-16 rounded-full " />
     </section>
   )
 }
