@@ -38,10 +38,10 @@ export const translations = {
         "Design, development, and deployment of a website for social media influencer to showcase their content and unify all their links in one place.",
       project2Title: "Minimal Game",
       project2Body:
-        "todo.",
-      project3Title: "GMTK Game Jam - Cutterang",
+        "Simple game where you control a character and try to catch every falling ball.",
+      project3Title: "Cutterang - GMTK Game Jam",
       project3Body:
-        "todo.",
+        "Little game made in 2 days for a Game Jam. You control a dot holding a boomerang that you can throw to cut shapes and solve puzzles.",
     },
     skills: {
       title: "My Skills",
@@ -123,15 +123,15 @@ export const translations = {
     },
     projects: {
       title: "Mis Proyectos",
-      project1Title: "Codetickets",
+      project1Title: "Web de Influencer",
       project1Body:
-        "SaaS de ticketing como portal de vendedor/retail para instituciones públicas y privadas, gestionando y sirviendo sus entradas de eventos.",
-      project2Title: "TLDRAW con Next.js",
+        "Diseño, desarrollo y despliegue de una web para influencer de redes sociales para mostrar su contenido y unificar todos sus enlaces en un solo lugar.",
+      project2Title: "Minimal Game",
       project2Body:
-        "Editor Tldraw hecho con React y shadcn, integrando IA con la API de OpenAI para generar formas SVG personalizadas.",
-      project3Title: "Plataforma E-Commerce",
+        "Juego simple donde controlas un personaje e intentas atrapar todas las bolas que caen.",
+      project3Title: "Cutterang - GMTK Game Jam",
       project3Body:
-        "Solución e-commerce full-stack con gestión de productos, carrito de compras, integración de pagos y panel de administración.",
+        "Jueguito hecho en 2 dias para una Game Jam. Controlas un punto que sostiene un boomerang que puedes lanzar para cortar formas y resolver puzzles.",
     },
     skills: {
       title: "Mis Habilidades",

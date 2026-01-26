@@ -8,21 +8,22 @@ const projects = [
   {
     titleKey: "project1Title",
     bodyKey: "project1Body",
-    tags: ["REACT", "NEXT.JS", "TYPESCRIPT", "VERCEL"],
-    image: "influencer-website.png",
+    tags: ["REACT", "NEXT.JS", "TYPESCRIPT", "VERCEL", "GIT", "GITHUB", "CSS", "TAILWIND", "SHADCN",],
+    image: "projects/influencer-website.png",
     url: "https://tonireboredo.es",
   },
   {
     titleKey: "project2Title",
     bodyKey: "project2Body",
-    tags: ["TRPC"],
-    image: "todo",
+    tags: ["Unity", "C#", "Game Development"],
+    image: "projects/minimal.png",
+    url: "https://daniellacaballero.itch.io/minimal",
   },
   {
     titleKey: "project3Title",
     bodyKey: "project3Body",
-    tags: ["Unity", "C#", "VERCEL"],
-    image: "cutterang.png",
+    tags: ["Unity", "C#", "Game Development"],
+    image: "projects/cutterang.png",
     url: "https://daniellacaballero.itch.io/cutterang"
   },
 ]
