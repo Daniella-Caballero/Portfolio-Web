@@ -33,7 +33,7 @@ export function Skills() {
 
   return (
     <section id="skills" className="py-20 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className=" max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-white mb-12">{t.skills.title}</h2>
         <div className="flex flex-wrap justify-center gap-3">
           {skills.map((skill) => (
@@ -46,6 +46,10 @@ export function Skills() {
           ))}
         </div>
       </div>
+      {/* Divider line */}
+      {/* 
+      <div className="w-[2px] h-24 bg-muted-foreground rounded-full mx-auto" /> 
+      */}
     </section>
   )
 }

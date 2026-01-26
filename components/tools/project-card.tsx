@@ -9,9 +9,10 @@ interface ProjectCardProps {
   tags: string[]
   image: string
   index: number
+  url?: string
 }
 
-export function ProjectCard({ title, body, tags, image, index }: ProjectCardProps) {
+export function ProjectCard({ title, body, tags, image, index, url }: ProjectCardProps) {
   const cardRef = useRef<HTMLDivElement>(null)
   const [scale, setScale] = useState(0.8)
   const isReversed = index % 2 !== 0
@@ -37,11 +38,11 @@ export function ProjectCard({ title, body, tags, image, index }: ProjectCardProp
     return () => observer.disconnect()
   }, [])
 
-  return (
+  const cardContent = (
     <div
       ref={cardRef}
       style={{ transform: `scale(${scale})`, willChange: 'transform' }}
-      className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} gap-6 md:gap-8 p-6 rounded-xl bg-[#1a1b2e]/80 border border-gray-700/50 transition-transform duration-100 ease-out`}
+      className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} gap-6 md:gap-8 p-6 rounded-xl bg-[#1a1b2e]/80 border border-gray-700/50 transition-transform duration-100 ease-out ${url ? "cursor-pointer" : ""}`}
     >
       <div className="flex-1 flex flex-col justify-center">
         <h3 className="text-xl md:text-2xl font-bold text-white mb-3">{title}</h3>
@@ -59,9 +60,15 @@ export function ProjectCard({ title, body, tags, image, index }: ProjectCardProp
       </div>
       <div className="flex-1 flex items-center justify-center">
         <div className="relative w-full aspect-video rounded-lg overflow-hidden">
-          <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover" />
+          <Image src={image || "/placeholder.svg"} alt={title} fill className=" " />
         </div>
       </div>
     </div>
   )
+
+  return url ? (
+    <a href={url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+      {cardContent}
+    </a>
+  ) : cardContent
 }
