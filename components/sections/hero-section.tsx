@@ -29,8 +29,7 @@ export function Hero() {
         <span className="font-bold text-foreground">{t.hero.years}</span>
         <span className="text-foreground">{t.hero.expText}</span>
         {!isMobile && <br />}
-        <span className="italic text-muted-foreground">{t.hero.building}</span>
-        <span className="italic text-muted-foreground">{t.hero.things}</span>
+        <span className="italic text-muted-foreground">{t.hero.puzzles}</span>
         {!isMobile && <br />}
         <span className="text-foreground">{t.hero.focusText}</span>
         <span className="font-bold underline underline-offset-4 text-foreground">{t.hero.focus}</span>

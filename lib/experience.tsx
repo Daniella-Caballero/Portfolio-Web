@@ -49,20 +49,13 @@ export function Experience() {
       dateRange: t.experience.exp2Date,
       body: t.experience.exp2Body,
       icon: <NextIcon />,
-    },
-    {
-      title: t.experience.exp3Title,
-      subtitle: t.experience.exp3Subtitle,
-      dateRange: t.experience.exp3Date,
-      body: t.experience.exp3Body,
-      icon: <CodeIcon />,
-    },
+    },   
   ]
 
   return (
     <section id="experience" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-white text-center mb-16">{t.experience.title}</h2>
+        <h2 className="text-3xl font-bold text-foreground text-center mb-16">{t.experience.title}</h2>
 
         <div className="relative">
           {/* Vertical Line */}
@@ -79,6 +72,7 @@ export function Experience() {
                 body={exp.body}
                 icon={exp.icon}
                 index={index}
+                language={language}
               />
             ))}
           </div>

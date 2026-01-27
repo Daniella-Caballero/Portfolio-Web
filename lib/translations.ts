@@ -16,8 +16,7 @@ export const translations = {
       withText: "with ",
       years: "2 years ",
       expText: "of experience. I love ",
-      building: "puzzles & building ",
-      things: "apps and websites. ",
+      puzzles: "puzzles & building apps and websites.",
       focusText: "My foci are ",
       focus: "React (Next.js) & Unity",
     },
@@ -48,21 +47,18 @@ export const translations = {
     },
     experience: {
       title: "My Experience",
-      exp1Title: "Frontend Web Developer (React)",
-      exp1Subtitle: "Tech Company Inc.",
-      exp1Date: "11/2024 - CURRENT",
+      exp1Title: "Portfolio Website (React)",
+      exp1Subtitle: "Me, Myself & I",
+      exp1Date: "1/2026",
       exp1Body:
-        "Currently driving frontend development, utilizing React 19.0 and related technologies to build robust and scalable applications. Proficient in integrating with custom APIs built on RESTful/CRUD principles and implementing Server-Side Rendering (SSR) with frameworks like Next.js.",
-      exp2Title: "Fullstack Web Developer",
-      exp2Subtitle: "Digital Agency S.L.",
-      exp2Date: "12/2022 - 09/2024",
+        "It's what you're viewing! I'm taking the opportunity to become more proficient with tools like Next.js, Node.js, Typescript, TailwindCSS, and learn completly new ones! Like Framer Motion, React Email and Resend.",
+
+      exp2Title: "Solo Frontend Web Developer (React)",
+      exp2Subtitle: "Fast Byte S.L.",
+      exp2Date: "9/2025 - 2/2026",
       exp2Body:
-        "Successfully managed the full lifecycle of eCommerce projects, leveraging a diverse tech stack including React and Next.js for the frontend and Node.js, Python for backend development. Experienced in deploying and managing applications on various cloud platforms.",
-      exp3Title: "IT Consultant & App Developer",
-      exp3Subtitle: "Consulting Group",
-      exp3Date: "05/2022 - 09/2022",
-      exp3Body:
-        "Contributed to the development of finance-focused applications using React & React Native on the frontend and Node.js on the backend, deployed on AWS and cloud servers. Took a leadership role in training junior developers.",
+        "Design, development, and deployment of a responsive and efficient web application using Next.js, Node.js, and TypeScript. Integration of Storyblok as a headless CMS to manage and deliver dynamic content through its API. Focus on performance, clean architecture, and seamless frontend-backend communication.",  
+
     },
     certificates: {
       title: "Certificates",
@@ -106,8 +102,7 @@ export const translations = {
       withText: "con ",
       years: "2 años ",
       expText: "de experiencia. Me encantan ",
-      building: "los puzzles y crear ",
-      things: "apps y websites. ",
+      puzzles: "los puzzles y crear apps y websites. ",
       focusText: "Mis pasiones son ",
       focus: "React (Next.js) y Unity",
     },
@@ -138,16 +133,17 @@ export const translations = {
     },
     experience: {
       title: "Mi Experiencia",
-      exp1Title: "Desarrollador Web Frontend (React)",
-      exp1Subtitle: "Tech Company Inc.",
-      exp1Date: "11/2024 - ACTUAL",
+      exp1Title: "Web Portfolio (React)",
+      exp1Subtitle: "Me, Myself & I",
+      exp1Date: "1/2026",
       exp1Body:
-        "Actualmente liderando el desarrollo frontend, utilizando React 19.0 y tecnologías relacionadas para construir aplicaciones robustas y escalables. Competente en la integración con APIs personalizadas basadas en principios RESTful/CRUD e implementando Server-Side Rendering (SSR) con frameworks como Next.js.",
-      exp2Title: "Desarrollador Web Fullstack",
-      exp2Subtitle: "Digital Agency S.L.",
-      exp2Date: "12/2022 - 09/2024",
+        "¡Es lo que estás viendo! Estoy aprovechando la oportunidad para volverme más competente con herramientas como Next.js, Node.js, Typescript, TailwindCSS, y aprender otras completamente nuevas! Como Framer Motion, React Email y Resend.",
+
+      exp2Title: "Desarrolladora Web Frontend en Solitario (React)",
+      exp2Subtitle: "Fast Byte S.L.",
+      exp2Date: "9/2025 - 2/2026",
       exp2Body:
-        "Gestión exitosa del ciclo completo de proyectos eCommerce, utilizando un stack tecnológico diverso incluyendo React y Next.js para el frontend y Node.js, Python para el desarrollo backend. Experiencia en despliegue y gestión de aplicaciones en diversas plataformas cloud.",
+        "Diseño, desarrollo y despliegue de una aplicación web responsive y eficiente usando Next.js, Node.js y TypeScript. Integración de Storyblok como CMS headless para gestionar y entregar contenido dinámico a través de su API. Enfoque en el rendimiento, arquitectura limpia y comunicación fluida entre frontend y backend.",
       exp3Title: "Consultor IT & Desarrollador de Apps",
       exp3Subtitle: "Consulting Group",
       exp3Date: "05/2022 - 09/2022",

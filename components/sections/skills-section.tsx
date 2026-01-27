@@ -34,7 +34,7 @@ export function Skills() {
   return (
     <section id="skills" className="py-20 px-4">
       <div className=" max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-white mb-12">{t.skills.title}</h2>
+        <h2 className="text-3xl font-bold text-center text-foreground mb-12">{t.skills.title}</h2>
         <div className="flex flex-wrap justify-center gap-3">
           {skills.map((skill) => (
             <span

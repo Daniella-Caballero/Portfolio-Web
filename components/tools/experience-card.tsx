@@ -9,9 +9,10 @@ interface ExperienceItemProps {
   body: string
   icon: ReactNode
   index: number
+  language: string
 }
 
-export function ExperienceItem({ title, subtitle, dateRange, body, icon, index }: ExperienceItemProps) {
+export function ExperienceItem({ title, subtitle, dateRange, body, icon, index, language }: ExperienceItemProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
   const isLeft = index % 2 === 0
@@ -44,10 +45,22 @@ export function ExperienceItem({ title, subtitle, dateRange, body, icon, index }
     >
       {/* Content */}
       <div className={`w-[calc(50%-2rem)] ${isLeft ? "text-right" : "text-left"}`}>
-        <h3 className="text-lg font-bold text-white uppercase tracking-wide">{title}</h3>
-        <p className="text-sm text-gray-400 mt-1">{subtitle}</p>
-        <p className="text-sm text-gray-500 mt-1">{dateRange}</p>
-        <p className="text-sm text-gray-300 mt-3 leading-relaxed">{body}</p>
+        <h3 className="text-lg font-bold uppercase tracking-wide">{title}</h3>
+        <p className="text-sm text-muted-foreground mt-1">{subtitle}</p>
+        <p className="text-sm text-muted-foreground mt-1">{dateRange}</p>
+        <p className="text-sm mt-3 leading-relaxed">
+          {language === "es" && (body.includes("responsive") || body.includes("headless")) ? (
+            <>
+              {body.split("responsive")[0]}
+              <span className="italic">{body.includes("responsive") ? "responsive" : ""}</span>
+              {body.split("responsive").length > 1 && body.split("responsive")[1].split("headless")[0]}
+              <span className="italic">{body.includes("headless") ? "headless" : ""}</span>
+              {body.split("headless").length > 1 && body.split("headless")[1]}
+            </>
+          ) : (
+            body
+          )}
+        </p>
       </div>
 
       {/* Icon Circle - Centered */}

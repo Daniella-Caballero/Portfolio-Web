@@ -42,7 +42,7 @@ export function ProjectCard({ title, body, tags, image, index, url }: ProjectCar
     <div
       ref={cardRef}
       style={{ transform: `scale(${scale})`, willChange: 'transform' }}
-      className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} gap-6 md:gap-8 p-6 rounded-xl bg-[#1a1b2e]/80 border border-gray-700/50 transition-transform duration-100 ease-out ${url ? "cursor-pointer" : ""}`}
+      className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} gap-6 md:gap-8 p-6 rounded-xl bg-card/80 border border-gray-700/50 transition-transform duration-100 ease-out ${url ? "cursor-pointer" : ""}`}
     >
       <div className="flex-1 flex flex-col justify-center">
         <h3 className="text-xl md:text-2xl font-bold text-white mb-3">{title}</h3>
