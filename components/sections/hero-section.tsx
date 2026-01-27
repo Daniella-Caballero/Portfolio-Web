@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <section id="home" className="min-h-screen flex flex-col items-center justify-center px-4 pt-20">
       <Avatar className="w-28 h-28 border-4 border-primary/30 mb-8">
-        <AvatarImage src="/placeholder.svg?height=112&width=112" />
+        <AvatarImage src="/pfp.jpg?height=112&width=112" />
         <AvatarFallback className="text-2xl">JD</AvatarFallback>
       </Avatar>
 
@@ -48,9 +48,11 @@ export function Hero() {
 
         {/* Row 2 */}
         <div className="flex justify-center items-center ">
-          <Button variant="secondary" className="w-min h-full text-lg rounded-full bg-muted">
-            {t.buttons.cv}
-            <Download style={{ width: 25, height: 25 }} />
+          <Button variant="secondary" className="w-min h-full text-lg rounded-full bg-muted" asChild>
+            <a href="/CV.pdf" download="Daniel_Caballero_CV.pdf">
+              {t.buttons.cv}
+              <Download style={{ width: 25, height: 25 }} />
+            </a>
           </Button>
         </div>
 

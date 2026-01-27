@@ -7,40 +7,14 @@ import { CertificateCard } from "../components/tools/certificate-card"
 const certificates = [
   {
     titleKey: "cert1Title",
-    icon: "/placeholder.svg?height=32&width=32",
     image: "/placeholder.svg?height=300&width=400",
     link: "https://example.com/cert1",
   },
   {
     titleKey: "cert2Title",
     icon: "/placeholder.svg?height=32&width=32",
-    image: "/placeholder.svg?height=300&width=400",
-    link: "https://example.com/cert2",
-  },
-  {
-    titleKey: "cert3Title",
-    icon: "/placeholder.svg?height=32&width=32",
-    image: "/placeholder.svg?height=300&width=400",
-    link: "https://example.com/cert3",
-  },
-  {
-    titleKey: "cert4Title",
-    icon: "/placeholder.svg?height=32&width=32",
-    image: "/placeholder.svg?height=300&width=400",
-    link: "https://example.com/cert4",
-  },
-  {
-    titleKey: "cert5Title",
-    icon: "/placeholder.svg?height=32&width=32",
-    image: "/placeholder.svg?height=300&width=400",
-    link: "https://example.com/cert5",
-  },
-  {
-    titleKey: "cert6Title",
-    icon: "/placeholder.svg?height=32&width=32",
-    image: "/placeholder.svg?height=300&width=400",
-    link: "https://example.com/cert6",
-  },
+    image: "/cert-C1-en.png?height=300&width=400",
+  }
 ]
 
 export function Certificates() {

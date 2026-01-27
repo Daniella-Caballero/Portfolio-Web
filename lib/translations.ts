@@ -63,7 +63,7 @@ export const translations = {
     certificates: {
       title: "Certificates",
       cert1Title: "Smart Contracts with Applications in FSC",
-      cert2Title: "Advanced Blockchain Skills Certificate",
+      cert2Title: "Cambridge English C1 Advanced",
       cert3Title: "Google Ads Apps Certificate",
       cert4Title: "React Advanced Patterns",
       cert5Title: "AWS Cloud Practitioner",
@@ -153,7 +153,7 @@ export const translations = {
     certificates: {
       title: "Certificados",
       cert1Title: "Smart Contracts con Aplicaciones en FSC",
-      cert2Title: "Certificado de Habilidades Avanzadas en Blockchain",
+      cert2Title: "Cambridge English C1 Advanced",
       cert3Title: "Certificado Google Ads Apps",
       cert4Title: "Patrones Avanzados de React",
       cert5Title: "AWS Cloud Practitioner",
