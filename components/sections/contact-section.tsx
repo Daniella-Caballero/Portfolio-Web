@@ -35,8 +35,8 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 px-4">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">{t.title}</h2>
-        <p className="text-gray-400 mb-8">{t.subtitle}</p>
+        <h2 className="text-3xl font-bold  mb-4">{t.title}</h2>
+        <p className=" mb-8">{t.subtitle}</p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -58,7 +58,7 @@ export function Contact() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="inline-flex items-center gap-2 px-8 py-3 bg-[#1e2033] hover:bg-[#2a2c42] text-white rounded-full transition-all disabled:opacity-50"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-[#2a2c42] text-white rounded-full transition-all disabled:opacity-50"
           >
             {isSubmitting ? t.submitting : submitted ? t.submitted : t.submit}
             <Send className="w-4 h-4" />
