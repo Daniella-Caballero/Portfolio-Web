@@ -3,6 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
+import { sendContactEmail } from "@/app/actions/contact"
 import { useLanguage } from "@/contexts/language-context"
 import { translations } from "@/lib/translations"
 import { Send } from "lucide-react"
@@ -17,20 +18,26 @@ export function Contact() {
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    setSubmitted(true)
-    setIsSubmitting(false)
-    setEmail("")
-    setMessage("")
-
-    // Reset submitted state after 3 seconds
-    setTimeout(() => setSubmitted(false), 3000)
-  }
+    e.preventDefault();
+    setIsSubmitting(true);
+    try {
+      const formData = new FormData();
+      formData.append("email", email);
+      formData.append("message", message);
+      const res = await sendContactEmail(formData);
+      if (res.success) {
+        setSubmitted(true);
+        setEmail("");
+        setMessage("");
+        setTimeout(() => setSubmitted(false), 3000);
+      } else {
+        // Manejar error si lo deseas
+      }
+    } catch (err) {
+      // Manejar error si lo deseas
+    }
+    setIsSubmitting(false);
+  };
 
   return (
     <section id="contact" className="py-24 px-4">

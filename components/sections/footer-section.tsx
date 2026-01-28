@@ -15,7 +15,7 @@ export function Footer() {
         </p>
         <p className="text-muted-foreground text-sm">
           <span className="text-muted-foreground">{t.about}</span> {t.builtWith} <span className="text-foreground">React</span> &{" "}
-          <span className="text-muted-foreground">Next.js</span> (App Router), <span className="text-foreground">TypeScript</span>
+          <span className="text-muted-foreground">Next.js</span> (App Router & Server Actions), <span className="text-foreground">TypeScript</span>
           , <span className="text-muted-foreground">Tailwind CSS</span>, <span className="text-foreground">shadcn/ui</span>,{" "}
           <a
             href="https://vercel.com"
