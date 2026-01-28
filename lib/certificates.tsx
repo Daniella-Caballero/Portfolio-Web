@@ -6,15 +6,15 @@ import { CertificateCard } from "../components/tools/certificate-card"
 
 const certificates = [
   {
+    titleKey: "cert2Title",
+    icon: "/cambridge.png",
+    image: "/cert-C1-en.png?height=300&width=400",
+  },
+  {
     titleKey: "cert1Title",
     image: "/placeholder.svg?height=300&width=400",
     link: "https://example.com/cert1",
   },
-  {
-    titleKey: "cert2Title",
-    icon: "/placeholder.svg?height=32&width=32",
-    image: "/cert-C1-en.png?height=300&width=400",
-  }
 ]
 
 export function Certificates() {

@@ -35,7 +35,7 @@ export function Experience() {
       dateRange: t.experience.exp2Date,
       body: t.experience.exp2Body,
       icon: <NextIcon />,
-    },   
+    },
   ]
 
   return (
@@ -45,7 +45,7 @@ export function Experience() {
 
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-gray-600" />
+          <div className="absolute md:left-1/2 m-3 md:m-0 top-0 bottom-0 w-px bg-muted-foreground" />
 
           {/* Experience Items */}
           <div className="flex flex-col gap-12">

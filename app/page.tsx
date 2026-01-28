@@ -30,7 +30,8 @@ export default function Home() {
 
 function MainContent() {
   return (
-    <main className="min-h-screen bg-portfolio-gradient">
+    // bg-portfolio-gradient
+    <main className="min-h-screen ">
       <LanguageToggle />
       <ThemeToggleButton />
       <Header />

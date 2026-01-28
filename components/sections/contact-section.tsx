@@ -45,7 +45,7 @@ export function Contact() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full px-6 py-4 bg-[#d1d5db] dark:bg-[#d1d5db] text-gray-800 placeholder-gray-500 rounded-xl border-none outline-none focus:ring-2 focus:ring-purple-500 transition-all"
+            className="w-full px-6 py-4 bg-secondary text-foreground placeholder-gray-500 rounded-xl border-none outline-none focus:ring-2 focus:ring-purple-500 transition-all"
           />
           <textarea
             placeholder={t.messagePlaceholder}
@@ -53,7 +53,7 @@ export function Contact() {
             onChange={(e) => setMessage(e.target.value)}
             required
             rows={6}
-            className="w-full px-6 py-4 bg-[#d1d5db] dark:bg-[#d1d5db] text-gray-800 placeholder-gray-500 rounded-xl border-none outline-none focus:ring-2 focus:ring-purple-500 transition-all resize-y"
+            className="w-full px-6 py-4 bg-secondary text-foreground placeholder-gray-500 rounded-xl border-none outline-none focus:ring-2 focus:ring-purple-500 transition-all resize-y"
           />
           <button
             type="submit"

@@ -57,17 +57,13 @@ export const translations = {
       exp2Subtitle: "Fast Byte S.L.",
       exp2Date: "9/2025 - 2/2026",
       exp2Body:
-        "Design, development, and deployment of a responsive and efficient web application using Next.js, Node.js, and TypeScript. Integration of Storyblok as a headless CMS to manage and deliver dynamic content through its API. Focus on performance, clean architecture, and seamless frontend-backend communication.",  
+        "Design, development, and deployment of a responsive and efficient web application using Next.js, Node.js, and TypeScript. Integration of Storyblok as a headless CMS to manage and deliver dynamic content through its API. Focus on performance, clean architecture, and seamless frontend-backend communication.",
 
     },
     certificates: {
       title: "Certificates",
-      cert1Title: "Smart Contracts with Applications in FSC",
+      cert1Title: "Catalán C1 Certificate",
       cert2Title: "Cambridge English C1 Advanced",
-      cert3Title: "Google Ads Apps Certificate",
-      cert4Title: "React Advanced Patterns",
-      cert5Title: "AWS Cloud Practitioner",
-      cert6Title: "Meta Frontend Developer",
     },
     contact: {
       title: "Contact Me",
@@ -152,12 +148,8 @@ export const translations = {
     },
     certificates: {
       title: "Certificados",
-      cert1Title: "Smart Contracts con Aplicaciones en FSC",
+      cert1Title: "Catalán C1 Certificado",
       cert2Title: "Cambridge English C1 Advanced",
-      cert3Title: "Certificado Google Ads Apps",
-      cert4Title: "Patrones Avanzados de React",
-      cert5Title: "AWS Cloud Practitioner",
-      cert6Title: "Desarrollador Frontend de Meta",
     },
     contact: {
       title: "Contáctame",
