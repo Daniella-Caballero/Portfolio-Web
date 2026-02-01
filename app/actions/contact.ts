@@ -2,23 +2,23 @@
 import { Resend } from "resend";
 import { render } from "@react-email/render";
 import ContactEmail from "../../components/tools/contact-email";
+import React from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY!);
 
 export async function sendContactEmail(formData: FormData) {
-    const name = formData.get("name") as string;
     const email = formData.get("email") as string;
     const message = formData.get("message") as string;
 
-    const emailHtml = render(
-        <ContactEmail name={ name } email = { email } message = { message } />
-  );
+    const emailHtml = await render(
+        React.createElement(ContactEmail, { email, message })
+    );
 
     try {
         await resend.emails.send({
-            from: "portfolio@yourdomain.com",
-            to: "your@email.com",
-            subject: `Nuevo mensaje de contacto de ${name}`,
+            from: "onboarding@resend.dev",
+            to: "daniellacaballeroo@gmail.com",
+            subject: `Nuevo mensaje de contacto de ${email}`,
             html: emailHtml,
         });
         return { success: true };

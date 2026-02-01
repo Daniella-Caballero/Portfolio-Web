@@ -6,9 +6,9 @@ import { ExternalLink } from "lucide-react"
 
 interface CertificateCardProps {
   title: string
-  icon: string
+  icon?: string
   image: string
-  link: string
+  link?: string
 }
 
 export function CertificateCard({ title, icon, image, link }: CertificateCardProps) {
@@ -44,11 +44,11 @@ export function CertificateCard({ title, icon, image, link }: CertificateCardPro
     >
       {/* Header con icono y título */}
       <div className="flex items-center gap-3 p-4 bg-[#12131f]">
-        <div className="relative w-8 h-8 flex-shrink-0">
-          <Image src={icon || "/placeholder.svg"} alt="" fill className="object-contain rounded" />
+        <div className={`relative w-8 h-8 flex-shrink-0 ${icon ? "" : "hidden"}`}>
+          <Image src={icon || "/placeholder.svg"} alt="" fill className="object-contain" />
         </div>
         <h3 className="text-white font-medium text-sm line-clamp-2 flex-1">{title}</h3>
-        <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+        <ExternalLink className={`w-4 h-4 text-gray-400 opacity-0 ${link ? "group-hover:opacity-100 transition-opacity" : ""}`} />
       </div>
 
       {/* Imagen del certificado */}

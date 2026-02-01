@@ -6,9 +6,21 @@ import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
 import { translations } from "@/lib/translations"
 
-
 export function Header() {
   const [activeItem, setActiveItem] = useState("home")
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, key: string) => {
+    e.preventDefault()
+    setActiveItem(key)
+    
+    // Usar Lenis para smooth scroll
+    const id = href.replace('#', '')
+    const element = document.getElementById(id)
+    
+    if (element && (window as any).lenis) {
+      (window as any).lenis.scrollTo(element)
+    }
+  }
 
   useEffect(() => {
     const sectionIds = [
@@ -59,8 +71,8 @@ export function Header() {
           <a
             key={item.key}
             href={item.href}
-            onClick={() => setActiveItem(item.key)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeItem === item.key ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
+            onClick={(e) => handleNavClick(e, item.href, item.key)}
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeItem === item.key ? "bg-muted-primary text-foreground" : "text-muted-foreground hover:text-foreground"
               }`}
           >
             {item.label}
@@ -87,8 +99,8 @@ export function Header() {
             <a
               key={item.key}
               href={item.href}
-              onClick={() => {
-                setActiveItem(item.key)
+              onClick={(e) => {
+                handleNavClick(e, item.href, item.key)
                 setMobileMenuOpen(false)
               }}
               className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors ${activeItem === item.key ? "bg-muted text-foreground" : "text-muted-foreground hover:text-foreground"
