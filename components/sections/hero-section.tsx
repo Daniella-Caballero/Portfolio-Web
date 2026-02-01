@@ -6,17 +6,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { useLanguage } from "@/contexts/language-context"
 import { translations } from "@/lib/translations"
 import { useIsMobile } from "@/hooks/use-mobile"
-import { elasticScrollToId } from "@/components/tools/elasticScrollTo"
 
 export function Hero() {
   const { language } = useLanguage()
   const t = translations[language]
   const isMobile = useIsMobile()
-
-  function handleContactClick(e: React.MouseEvent) {
-    e.preventDefault();
-    elasticScrollToId("contact", -20);
-  }
 
   return (
     <section id="home" className="min-h-screen flex flex-col items-center justify-center px-4 pt-20">
@@ -46,9 +40,11 @@ export function Hero() {
 
         {/* Row 1 */}
         <div className="flex justify-center">
-          <Button className="rounded-full text-xl md:text-2xl w-full h-full flex justify-center items-center" onClick={handleContactClick}>
-            <span className="text-xl m-2 md:text-2xl font-semibold ">{t.buttons.contact}</span>
-            <ArrowRight style={{ width: 35, height: 35 }} className="" />
+          <Button className="rounded-full text-xl md:text-2xl w-full h-full flex justify-center items-center" asChild>
+            <a href="#contact">
+              <span className="text-xl m-2 md:text-2xl font-semibold ">{t.buttons.contact}</span>
+              <ArrowRight style={{ width: 35, height: 35 }} className="" />
+            </a>
           </Button>
         </div>
 

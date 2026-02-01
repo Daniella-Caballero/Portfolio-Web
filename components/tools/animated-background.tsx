@@ -19,13 +19,14 @@ const Blob = ({ className, gradient = "radial-gradient(circle, hsl(var(--primary
         className={`
       absolute
       rounded-full
-      blur-[50px]
-      opacity-90
+      blur-3xl
+      opacity-60
       will-change-transform
       ${className}
     `}
         style={{
             background: gradient,
+            mixBlendMode: "screen",
         }}
         animate={animation}
         transition={{
@@ -39,41 +40,41 @@ const Blob = ({ className, gradient = "radial-gradient(circle, hsl(var(--primary
 
 export default function AnimatedGradientBackground() {
     return (
-        <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            {/* Blob principal (primary) */}
+        <div className="absolute inset-0 overflow-hidden">
+            {/* Blob lila */}
             <Blob
-                className="top-[-20%] left-[-10%] h-[500px] w-[500px]"
-                gradient="radial-gradient(circle at center, var(--primary) 0%, transparent 300%)"
+                className="h-[800px] w-[800px]"
+                gradient="radial-gradient(circle at center, var(--primary) 0%, transparent 60%)"
                 animation={{
-                    x: [0, 60, -40, 0],
-                    y: [0, -30, 20, 0],
-                    scale: [1, 1.1, 0.95, 1],
+                    x: [0, 100, -80, 0],
+                    y: [0, -60, 40, 0],
+                    scale: [1, 1.15, 0.9, 1],
                 }}
-                duration={26}
+                duration={12}
             />
 
-            {/* Blob acento (accent) */}
+            {/* Blob yellow */}
             <Blob
-                className="top-[10%] right-[-15%] h-[600px] w-[600px]"
-                gradient="radial-gradient(circle at center, var(--accent) 0%, transparent 300%)"
+                className="right-[-20%] h-[900px] w-[900px]"
+                gradient="radial-gradient(circle at center, hsl(73, 36%, 67%) 0%, transparent 60%)"
                 animation={{
-                    x: [0, -50, 30, 0],
-                    y: [0, 40, -20, 0],
-                    scale: [1, 1.05, 1, 0.98],
+                    x: [0, -90, 70, 0],
+                    y: [0, 70, -40, 0],
+                    scale: [1, 1.1, 0.95, 1],
                 }}
                 duration={30}
             />
 
-            {/* Blob secundario (secondary) */}
+            {/* Blob red */}
             <Blob
-                className="bottom-[-25%] left-[20%] h-[700px] w-[700px]"
-                gradient="radial-gradient(circle at center, var(--secondary) 0%, transparent 300%)"
+                className="top-[5%] left-[30%] h-[1000px] w-[1000px]"
+                gradient="radial-gradient(circle at center, var(--destructive) 0%, transparent 60%)"
                 animation={{
-                    x: [0, 40, -60, 0],
-                    y: [0, -20, 40, 0],
-                    scale: [1, 0.95, 1.1, 1],
+                    x: [0, 80, -100, 0],
+                    y: [0, -50, 60, 0],
+                    scale: [1, 0.95, 1.15, 1],
                 }}
-                duration={34}
+                duration={20}
             />
         </div>
     );

@@ -117,7 +117,7 @@ export const translations = {
       project1Title: "Web de Influencer",
       project1Body:
         "Diseño, desarrollo y despliegue de una web para influencer de redes sociales para mostrar su contenido y unificar todos sus enlaces en un solo lugar.",
-      project2Title: "Minimal Game",
+      project2Title: "Juego Minimal",
       project2Body:
         "Juego simple donde controlas un personaje e intentas atrapar todas las bolas que caen.",
       project3Title: "Cutterang - GMTK Game Jam",

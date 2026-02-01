@@ -31,10 +31,10 @@ export function Contact() {
         setMessage("");
         setTimeout(() => setSubmitted(false), 3000);
       } else {
-        // Manejar error si lo deseas
+        // Manejar error
       }
     } catch (err) {
-      // Manejar error si lo deseas
+      // Manejar error
     }
     setIsSubmitting(false);
   };

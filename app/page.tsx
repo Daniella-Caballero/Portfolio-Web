@@ -14,14 +14,17 @@ import { LanguageToggle } from "@/components/tools/language-toggle"
 import { LanguageProvider } from "@/contexts/language-context"
 import { ThemeToggleButton } from "@/components/tools/theme-toggle-button"
 import AnimatedGradientBackground from "@/components/tools/animated-background"
+import SmoothScroll from "@/components/tools/smoothscroll"
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-screen bg-portfolio-gradient">
+      <AnimatedGradientBackground />
       <ThemeProvider>
         <LanguageProvider>
-          <AnimatedGradientBackground />
-          <MainContent />
+          <SmoothScroll> 
+            <MainContent />
+          </SmoothScroll>
         </LanguageProvider>
       </ThemeProvider>
     </main>
@@ -30,8 +33,7 @@ export default function Home() {
 
 function MainContent() {
   return (
-    // bg-portfolio-gradient
-    <main className="min-h-screen ">
+    <div className=" z-10 flex flex-col">
       <LanguageToggle />
       <ThemeToggleButton />
       <Header />
@@ -43,6 +45,6 @@ function MainContent() {
       <Certificates />
       <Contact />
       <Footer />
-    </main>
+    </div>
   )
 }
