@@ -33,7 +33,7 @@ export default function Home() {
 
 function MainContent() {
   return (
-    <div className=" z-10 flex flex-col">
+    <div className="relative z-10 flex flex-col">
       <LanguageToggle />
       <ThemeToggleButton />
       <Header />

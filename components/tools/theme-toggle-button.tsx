@@ -1,18 +1,20 @@
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/theme-context";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 export function ThemeToggleButton() {
     const { theme, toggleTheme } = useTheme();
     const isDark = theme === "dark";
     const [mounted, setMounted] = useState(false);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setMounted(true);
     }, []);
 
-    if (!mounted) {
+    // Don't render anything on server to avoid hydration mismatch
+    if (typeof window === 'undefined' || !mounted) {
         return (
             <Button
                 variant="ghost"

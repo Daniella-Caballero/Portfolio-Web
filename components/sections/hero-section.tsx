@@ -12,6 +12,14 @@ export function Hero() {
   const t = translations[language]
   const isMobile = useIsMobile()
 
+  const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const element = document.getElementById('contact')
+    if (element && (window as any).lenis) {
+      (window as any).lenis.scrollTo(element)
+    }
+  }
+
   return (
     <section id="home" className="min-h-screen flex flex-col items-center justify-center px-4 pt-20">
       <Avatar className="w-28 h-28 border-4 border-primary/30 mb-8">
@@ -41,7 +49,7 @@ export function Hero() {
         {/* Row 1 */}
         <div className="flex justify-center">
           <Button className="rounded-full text-xl md:text-2xl w-full h-full flex justify-center items-center" asChild>
-            <a href="#contact">
+            <a href="#contact" onClick={handleContactClick}>
               <span className="text-xl m-2 md:text-2xl font-semibold ">{t.buttons.contact}</span>
               <ArrowRight style={{ width: 35, height: 35 }} className="" />
             </a>

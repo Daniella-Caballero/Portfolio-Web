@@ -17,6 +17,12 @@ const NextIcon = () => (
   </svg>
 )
 
+const UnityIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5 fill-accent">
+    <path d="M12 0L1.605 6v12L12 24l10.395-6V6L12 0zm8.978 16.5l-7.478 4.318v-8.637l7.478-4.318v8.637zM4.522 7.682l7.478-4.318v8.637L4.522 16.32V7.682z" />
+  </svg>
+)
+
 export function Experience() {
   const { language } = useLanguage()
   const t = translations[language]
@@ -35,6 +41,13 @@ export function Experience() {
       dateRange: t.experience.exp2Date,
       body: t.experience.exp2Body,
       icon: <NextIcon />,
+    },
+     {
+      title: t.experience.exp3Title,
+      subtitle: t.experience.exp3Subtitle,
+      dateRange: t.experience.exp3Date,
+      body: t.experience.exp3Body,
+      icon: <UnityIcon />,
     },
   ]
 

@@ -14,7 +14,7 @@ export const translations = {
       intro: "a ",
       role: "full-stack developer ",
       withText: "with ",
-      years: "2 years ",
+      years: "1 year ",
       expText: "of experience. I love ",
       puzzles: "puzzles & building apps and websites.",
       focusText: "My foci are ",
@@ -49,7 +49,7 @@ export const translations = {
       title: "My Experience",
       exp1Title: "Portfolio Website (React)",
       exp1Subtitle: "Me, Myself & I",
-      exp1Date: "1/2026",
+      exp1Date: "1/2026 - 2/2026",
       exp1Body:
         "It's what you're viewing! I'm taking the opportunity to become more proficient with tools like Next.js, Node.js, Typescript, TailwindCSS, and learn completly new ones! Like Framer Motion, React Email and Resend.",
 
@@ -59,6 +59,11 @@ export const translations = {
       exp2Body:
         "Design, development, and deployment of a responsive and efficient web application using Next.js, Node.js, and TypeScript. Integration of Storyblok as a headless CMS to manage and deliver dynamic content through its API. Focus on performance, clean architecture, and seamless frontend-backend communication.",
 
+      exp3Title: "Solo Game Developer",
+      exp3Subtitle: "Self-Employed",
+      exp3Date: "03/2025 - 09/2025",
+      exp3Body:
+        "Design and development of a turn-based strategy game using Unity and C#. Work in progress.",
     },
     certificates: {
       title: "Certificates",
@@ -96,7 +101,7 @@ export const translations = {
       intro: "una ",
       role: "desarrolladora full-stack ",
       withText: "con ",
-      years: "2 años ",
+      years: "1 año ",
       expText: "de experiencia. Me encantan ",
       puzzles: "los puzzles y crear apps y websites. ",
       focusText: "Mis pasiones son ",
@@ -131,7 +136,7 @@ export const translations = {
       title: "Mi Experiencia",
       exp1Title: "Web Portfolio (React)",
       exp1Subtitle: "Me, Myself & I",
-      exp1Date: "1/2026",
+      exp1Date: "1/2026 - 2/2026",
       exp1Body:
         "¡Es lo que estás viendo! Estoy aprovechando la oportunidad para volverme más competente con herramientas como Next.js, Node.js, Typescript, TailwindCSS, y aprender otras completamente nuevas! Como Framer Motion, React Email y Resend.",
 
@@ -140,11 +145,11 @@ export const translations = {
       exp2Date: "9/2025 - 2/2026",
       exp2Body:
         "Diseño, desarrollo y despliegue de una aplicación web responsive y eficiente usando Next.js, Node.js y TypeScript. Integración de Storyblok como CMS headless para gestionar y entregar contenido dinámico a través de su API. Enfoque en el rendimiento, arquitectura limpia y comunicación fluida entre frontend y backend.",
-      exp3Title: "Consultor IT & Desarrollador de Apps",
-      exp3Subtitle: "Consulting Group",
-      exp3Date: "05/2022 - 09/2022",
+      exp3Title: "Desarrolladora en Unity Sola",
+      exp3Subtitle: "Autónoma",
+      exp3Date: "03/2025 - 09/2025",
       exp3Body:
-        "Contribución al desarrollo de aplicaciones enfocadas en finanzas usando React y React Native en el frontend y Node.js en el backend, desplegadas en AWS y servidores cloud. Rol de liderazgo en la formación de desarrolladores junior.",
+        "Diseño y desarrollo de un juego de estrategia por turnos usando Unity y C#. Trabajo en progreso.",
     },
     certificates: {
       title: "Certificados",

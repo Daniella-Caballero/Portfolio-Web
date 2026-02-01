@@ -12,8 +12,8 @@ const certificates = [
   },
   {
     titleKey: "cert1Title",
-    image: "/placeholder.svg?height=300&width=400",
-    link: "https://example.com/cert1",
+    icon: "/logo-gen-cat.png",
+    image: "/cert-C1-cat.png",
   },
 ]
 
@@ -33,7 +33,7 @@ export function Certificates() {
               title={t.certificates[cert.titleKey as keyof typeof t.certificates] as string}
               icon={cert.icon}
               image={cert.image}
-              link={cert.link}
+              //link={cert.link}
             />
           ))}
         </div>
