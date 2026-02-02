@@ -7,13 +7,13 @@ import { CertificateCard } from "../components/tools/certificate-card"
 const certificates = [
   {
     titleKey: "cert2Title",
-    icon: "/cambridge.png",
-    image: "/cert-C1-en.png?height=300&width=400",
+    icon: "/certificates/cambridge.png",
+    image: "/certificates/cert-C1-en.png?height=300&width=400",
   },
   {
     titleKey: "cert1Title",
-    icon: "/logo-gen-cat.png",
-    image: "/cert-C1-cat.png",
+    icon: "/certificates/logo-gen-cat.png",
+    image: "/certificates/cert-C1-cat.png",
   },
 ]
 
