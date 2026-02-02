@@ -16,8 +16,8 @@ export const translations = {
       withText: "with ",
       years: "1 year ",
       expText: "of experience. I love ",
-      puzzles: "puzzles & building apps and websites.",
-      focusText: "My foci are ",
+      puzzles: "puzzles & building apps and websites. ",
+      focusText: "My forte are ",
       focus: "React (Next.js) & Unity",
     },
     buttons: {
