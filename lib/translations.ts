@@ -67,8 +67,9 @@ export const translations = {
     },
     certificates: {
       title: "Certificates",
-      cert1Title: "Catalán C1 Certificate",
-      cert2Title: "Cambridge English C1 Advanced",
+      catC1Title: "Catalán C1 Certificate",
+      engC1Title: "Cambridge English C1 Advanced",
+      angBasTitle: "Angular Basics Certificate",
     },
     contact: {
       title: "Contact Me",
@@ -153,8 +154,9 @@ export const translations = {
     },
     certificates: {
       title: "Certificados",
-      cert1Title: "Catalán C1 Certificado",
-      cert2Title: "Cambridge English C1 Advanced",
+      catC1Title: "Catalán C1 Certificado",
+      engC1Title: "Cambridge English C1 Advanced",
+      angBasTitle:"Angular Basics Certificado",
     },
     contact: {
       title: "Contáctame",
