@@ -8,7 +8,7 @@ const projects = [
   {
     titleKey: "project1Title",
     bodyKey: "project1Body",
-    tags: ["REACT", "NEXT.JS", "TYPESCRIPT", "VERCEL", "GIT", "GITHUB", "CSS", "TAILWIND", "SHADCN",],
+    tags: ["REACT", "NEXT.JS","SYMFONY", "TYPESCRIPT", "VERCEL", "GIT", "GITHUB", "CSS", "TAILWIND", "SHADCN",],
     image: "projects/influencer-website.png",
     url: "https://tonireboredo.es",
   },
