@@ -12,6 +12,7 @@ const skills = [
   "PHP",
   "React",
   "Next.js",
+  "SYMFONY",
   "JavaScript",
   "Flutter",
   "Dart",
