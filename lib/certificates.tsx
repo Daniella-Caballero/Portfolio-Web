@@ -15,6 +15,11 @@ const certificates = [
     icon: "/certificates/logo-gen-cat.png",
     image: "/certificates/cert-C1-cat.png",
   },
+  {
+    titleKey: "cert3Title",
+    icon: "/certificates/angular-logo.png",
+    image: "/certificates/cert-angular-basics.png",
+  },
 ]
 
 export function Certificates() {
