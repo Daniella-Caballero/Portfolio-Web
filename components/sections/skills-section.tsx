@@ -20,6 +20,7 @@ const skills = [
   "CSS",
   "Tailwind",
   "MySQL",
+  "SQLite",
   "MongoDB",
   "MariaDB",
   "Supabase",
