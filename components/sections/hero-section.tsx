@@ -9,6 +9,7 @@ import { useIsMobile } from "@/hooks/use-mobile"
 
 export function Hero() {
   const { language } = useLanguage()
+  const filePath = language === "es" ? "/CV es.pdf" : "/CV en.pdf"
   const t = translations[language]
   const isMobile = useIsMobile()
 
@@ -59,12 +60,12 @@ export function Hero() {
         {/* Row 2 */}
         <div className="flex justify-center items-center ">
           <Button variant="secondary" className="w-min h-full text-lg rounded-full bg-muted" asChild>
-            <a href="/CV.pdf" download="Daniel_Caballero_CV.pdf">
+            <a href={filePath} download="Daniella_Caballero_CV.pdf">
               {t.buttons.cv}
               <Download style={{ width: 25, height: 25 }} />
             </a>
           </Button>
-        </div>
+        </div> 
 
         {/* Row 3 */}
         <div className="flex items-center justify-center gap-6">
