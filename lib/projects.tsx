@@ -6,22 +6,29 @@ import { ProjectCard } from "../components/tools/project-card"
 
 const projects = [
   {
-    titleKey: "project1Title",
-    bodyKey: "project1Body",
+    titleKey: "projectCloudyTitle",
+    bodyKey: "projectCloudyBody",
+    tags: ["SUPABASE","MySQL","JEST","REACT", "NEXT.JS","SYMFONY", "TYPESCRIPT", "VERCEL", "GIT", "GITHUB", "CSS", "TAILWIND", "SHADCN",],
+    image: "projects/cloudy.png",
+    url: "https://cloudy-notes.vercel.app",
+  },
+  {
+    titleKey: "projectInfluWebsiteTitle",
+    bodyKey: "projectInfluWebsiteBody",
     tags: ["REACT", "NEXT.JS","SYMFONY", "TYPESCRIPT", "VERCEL", "GIT", "GITHUB", "CSS", "TAILWIND", "SHADCN",],
     image: "projects/influencer-website.png",
     url: "https://tonireboredo.es",
   },
   {
-    titleKey: "project2Title",
-    bodyKey: "project2Body",
+    titleKey: "projectMinimalGameTitle",
+    bodyKey: "projectMinimalGameBody",
     tags: ["Unity", "C#", "Game Development"],
     image: "projects/minimal.png",
     url: "https://daniellacaballero.itch.io/minimal",
   },
   {
-    titleKey: "project3Title",
-    bodyKey: "project3Body",
+    titleKey: "projectCutterangTitle",
+    bodyKey: "projectCutterangBody",
     tags: ["Unity", "C#", "Game Development"],
     image: "projects/cutterang.png",
     url: "https://daniellacaballero.itch.io/cutterang"
