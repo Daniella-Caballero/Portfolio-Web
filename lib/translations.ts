@@ -14,11 +14,11 @@ export const translations = {
       intro: "a ",
       role: "full-stack developer ",
       withText: "with ",
-      years: "1 year ",
+      years: "2 years ",
       expText: "of experience. I love ",
       puzzles: "puzzles & building apps and websites. ",
       focusText: "My forte are ",
-      focus: "React (Next.js) & Unity",
+      focus: "React (Next.js) & .NET",
     },
     buttons: {
       contact: "Contact me here!",
@@ -32,14 +32,17 @@ export const translations = {
     },
     projects: {
       title: "My Projects",
-      project1Title: "Influencer Website",
-      project1Body:
+      projectCloudyTitle: "Cloudy Notes",
+      projectCloudyBody:
+        "A web application for taking notes, with a focus on simplicity, accessibility and easy of use. It allows users to manage their notes from anywhere, anytime.",
+      projectInfluWebsiteTitle: "Influencer Website",
+      projectInfluWebsiteBody:
         "Design, development, and deployment of a website for social media influencer to showcase their content and unify all their links in one place.",
-      project2Title: "Minimal Game",
-      project2Body:
+      projectMinimalGameTitle: "Minimal Game",
+      projectMinimalGameBody:
         "Simple game where you control a character and try to catch every falling ball.",
-      project3Title: "Cutterang - GMTK Game Jam",
-      project3Body:
+      projectCutterangTitle: "Cutterang - GMTK Game Jam",
+      projectCutterangBody:
         "Little game made in 2 days for a Game Jam. You control a dot holding a boomerang that you can throw to cut shapes and solve puzzles.",
     },
     skills: {
@@ -71,6 +74,7 @@ export const translations = {
       engC1Title: "Cambridge English C1 Advanced",
       angBasTitle: "Angular Basics Certificate",
       reaBegTitle: "React Beginner Certificate",
+      jasmineTitle: "Unit Testing (Jasmine) Certificate",
     },
     contact: {
       title: "Contact Me",
@@ -103,11 +107,11 @@ export const translations = {
       intro: "una ",
       role: "desarrolladora full-stack ",
       withText: "con ",
-      years: "1 año ",
+      years: "2 años ",
       expText: "de experiencia. Me encantan ",
       puzzles: "los puzzles y crear apps y websites. ",
       focusText: "Mis pasiones son ",
-      focus: "React (Next.js) y Unity",
+      focus: "React (Next.js) y .NET",
     },
     buttons: {
       contact: "Contáctame aquí!",
@@ -121,14 +125,17 @@ export const translations = {
     },
     projects: {
       title: "Mis Proyectos",
-      project1Title: "Web de Influencer",
-      project1Body:
+      projectCloudyTitle: "Cloudy Notes",
+      projectCloudyBody:
+        "Aplicación web para tomar notas, con un enfoque en la simplicidad, accesibilidad y facilidad de uso. Permite a los usuarios gestionar sus notas desde cualquier lugar y en cualquier momento.",
+      projectInfluWebsiteTitle: "Web de Influencer",
+      projectInfluWebsiteBody:
         "Diseño, desarrollo y despliegue de una web para influencer de redes sociales para mostrar su contenido y unificar todos sus enlaces en un solo lugar.",
-      project2Title: "Juego Minimal",
-      project2Body:
+      projectMinimalGameTitle: "Juego Minimal",
+      projectMinimalGameBody:
         "Juego simple donde controlas un personaje e intentas atrapar todas las bolas que caen.",
-      project3Title: "Cutterang - GMTK Game Jam",
-      project3Body:
+      projectCutterangTitle: "Cutterang - GMTK Game Jam",
+      projectCutterangBody:
         "Jueguito hecho en 2 dias para una Game Jam. Controlas un punto que sostiene un boomerang que puedes lanzar para cortar formas y resolver puzzles.",
     },
     skills: {
@@ -159,6 +166,7 @@ export const translations = {
       engC1Title: "Cambridge English C1 Advanced",
       angBasTitle:"Angular Basics Certificado",
       reaBegTitle: "React Beginner Certificado",
+      jasmineTitle: "Unit Testing (Jasmine) Certificado",
     },
     contact: {
       title: "Contáctame",
