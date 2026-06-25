@@ -74,6 +74,7 @@ export const translations = {
       engC1Title: "Cambridge English C1 Advanced",
       angBasTitle: "Angular Basics Certificate",
       reaBegTitle: "React Beginner Certificate",
+      jasmineTitle: "Unit Testing (Jasmine) Certificate",
     },
     contact: {
       title: "Contact Me",
@@ -165,6 +166,7 @@ export const translations = {
       engC1Title: "Cambridge English C1 Advanced",
       angBasTitle:"Angular Basics Certificado",
       reaBegTitle: "React Beginner Certificado",
+      jasmineTitle: "Unit Testing (Jasmine) Certificado",
     },
     contact: {
       title: "Contáctame",
