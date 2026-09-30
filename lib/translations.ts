@@ -27,7 +27,7 @@ export const translations = {
     about: {
       title: "About Me",
       description:
-        "An experienced Junior Fullstack Developer with a versatile skill set across both frontend and backend development. Proficient in building dynamic and user-focused interfaces with React. Hands-on experience in mobile application development using Android Studio, as well as in game development with Unity. Comfortable working across the full development lifecycle, from concept to deployment, with a solid understanding of modern web technologies, databases, and APIs. Fan of clean code and best practices, including SOLID principles and hexagonal architecture, to ensure maintainable, scalable, and well-structured solutions. Proven ability to collaborate within team-based environments, using tools from the Git ecosystem to deliver reliable and high-quality software.",
+        "An experienced Junior Fullstack Developer with a versatile skill set across both frontend and backend. Proficient in building dynamic and user-focused interfaces with React. Comfortable working across the full development lifecycle, from concept to deployment, with a solid understanding of modern web technologies, agile methodologies, databases, and APIs. Fan of clean code and best practices, including SOLID principles and hexagonal architecture, to ensure maintainable, scalable, and well-structured solutions. Proven ability to collaborate within team-based environments, using tools from the Git ecosystem to deliver reliable and high-quality software.",
       role: "Junior Fullstack Developer",
     },
     projects: {
@@ -120,7 +120,7 @@ export const translations = {
     about: {
       title: "Sobre Mí",
       description:
-        "Versátil Desarrolladora Junior Fullstack con experiencia tanto en frontend como en backend. Competente en la creación de interfaces dinámicas y centradas en el usuario con React. Cuenta con experiencia práctica en el desarrollo de aplicaciones móviles utilizando Android Studio, así como en el desarrollo de videojuegos con Unity. Cómoda trabajando a lo largo de todo el ciclo de vida del desarrollo, desde la concepción hasta el despliegue, con un sólido conocimiento de tecnologías web modernas, bases de datos y APIs. Fan del código limpio y de las buenas prácticas, incluyendo los principios SOLID y la arquitectura hexagonal, para garantizar soluciones mantenibles, escalables y bien estructuradas. Versada en colaborar en entornos de trabajo en equipo, usando herramientas del ecosistema Git para entregar software fiable y de alta calidad.",
+        "Versátil Desarrolladora Junior Fullstack con experiencia tanto en frontend como en backend. Competente en la creación de interfaces dinámicas y centradas en el usuario con React. Cómoda trabajando a lo largo de todo el ciclo de vida del desarrollo, desde la concepción hasta el despliegue, con un sólido conocimiento de tecnologías web modernas, metodologías agiles, bases de datos y APIs. Fan del código limpio y de las buenas prácticas, incluyendo los principios SOLID y la arquitectura hexagonal, para garantizar soluciones mantenibles, escalables y bien estructuradas. Versada en colaborar en entornos de trabajo en equipo, usando herramientas del ecosistema Git para entregar software fiable y de alta calidad.",
       role: "Desarrolladora Junior Fullstack",
     },
     projects: {
