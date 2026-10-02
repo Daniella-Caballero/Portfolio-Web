@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       greeting: "Hey there! I'm Daniella, ",
       intro: "a ",
-      role: "full-stack developer ",
+      role: "front-end developer ",
       withText: "with ",
       years: "2 years ",
       expText: "of experience. I love ",
@@ -120,7 +120,7 @@ export const translations = {
     about: {
       title: "Sobre Mí",
       description:
-        "Versátil Desarrolladora Junior Fullstack con experiencia tanto en frontend como en backend. Competente en la creación de interfaces dinámicas y centradas en el usuario con React. Cómoda trabajando a lo largo de todo el ciclo de vida del desarrollo, desde la concepción hasta el despliegue, con un sólido conocimiento de tecnologías web modernas, metodologías agiles, bases de datos y APIs. Fan del código limpio y de las buenas prácticas, incluyendo los principios SOLID y la arquitectura hexagonal, para garantizar soluciones mantenibles, escalables y bien estructuradas. Versada en colaborar en entornos de trabajo en equipo, usando herramientas del ecosistema Git para entregar software fiable y de alta calidad.",
+        "Versátil Desarrolladora Front-end Junior con experiencia tanto en frontend como en backend. Competente en la creación de interfaces dinámicas y centradas en el usuario con React. Cómoda trabajando a lo largo de todo el ciclo de vida del desarrollo, desde la concepción hasta el despliegue, con un sólido conocimiento de tecnologías web modernas, metodologías agiles, bases de datos y APIs. Fan del código limpio y de las buenas prácticas, incluyendo los principios SOLID y la arquitectura hexagonal, para garantizar soluciones mantenibles, escalables y bien estructuradas. Versada en colaborar en entornos de trabajo en equipo, usando herramientas del ecosistema Git para entregar software fiable y de alta calidad.",
       role: "Desarrolladora Junior Fullstack",
     },
     projects: {
