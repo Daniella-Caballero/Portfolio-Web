@@ -23,7 +23,7 @@ export function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex flex-col items-center justify-center px-4 pt-20">
-      <Avatar className="w-28 h-28 border-4 border-primary/30 mb-8">
+      <Avatar className="w-40 h-40 border-4 border-primary/30 mb-8">
         <AvatarImage src="/pfp.png?height=112&width=112" />
         <AvatarFallback className="text-2xl">JD</AvatarFallback>
       </Avatar>
